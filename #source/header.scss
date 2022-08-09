@@ -1,0 +1,185 @@
+.navbar {
+    padding-top: 30px;
+    background: url(../img/home/elipse.svg) no-repeat 48% -11px;
+
+    // .navbar__button
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 1 20%;
+        &>button:hover{
+            filter: drop-shadow(0px 0px 7px black);
+        }
+    }
+    &__projects {
+        display: flex;
+        align-items: center;
+        flex: 0 1 15%;
+        justify-content: flex-end;
+        margin-right: 10px;
+        & img {
+            width: 35px;
+            margin-right: 15px;
+        }
+        & span {
+            font-size: 15px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+    &__menu{
+        position: absolute;
+        z-index: 1;
+        margin-top: 5px;
+        top: -200px;
+        right: 0;
+        width: 200px;
+        padding: 30px 24px;
+        background: #ffffffe6;
+        border: 1px solid #00000025;
+        transition: all ease 0.3s;
+        & ul > li > a{
+            color: #000;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 19px;
+            &:hover{
+                color: #0A62D0;
+            }
+        }
+        & ul > li{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+
+        &.active{
+            top: 60px;
+        }
+    }
+
+    &__user{
+        align-self: flex-end;
+        flex-direction: row;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    &__avatar {
+        & img {
+            width: 50px;
+            border-radius: 50%;
+        }
+        margin-right: 7px;
+    }
+    &__login{
+        & span{
+            font-size: 18px;
+        }
+    }
+    &__button{
+        width: 25px;
+        height: 10px;
+        cursor: pointer;
+        position: relative;
+        &::after, &::before{
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 1px;
+            background-color: #000;
+            top: 50%;
+            transition: all ease 0.3s;
+        }
+        &::after{
+            transform: rotate(45deg);
+            right: 0;
+        }
+        &::before{
+            transform: rotate(-45deg);
+            left: 0;
+        }
+
+        &.active{
+            &::after{
+                transform: rotate(-45deg);
+                right: 0;
+            }
+            &::before{
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    // .logo__img
+    position: relative;
+    left: -15px;
+    display: flex;
+    align-items: center;
+    &__img {
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    // .logo__text
+
+    &__text {
+        font-family: 'Ceviche One', cursive;
+        font-size: 25px;
+        color: #191718;
+        
+        span{
+            display: inline-block;
+            margin: 0 2px 0 3px;
+            border: 1px solid rgba(0, 0, 0, 0.164);
+            border-radius: 50%;
+            background-color: #F3D849;
+            width: 6px;
+            height: 6px;
+        }
+    }
+
+    &-session{
+        flex: 0 1 50%;
+    }
+}
+
+
+.button-login {
+    display: flex;
+    align-items: center;
+    img {
+        width: 22px;
+        height: 22px;
+        margin-right: 9px;
+    }
+    margin-right: 10px;
+
+}
+
+.button-register {
+    padding: 6px 10px;
+    border: 1px solid #191718;
+    border-radius: 3px;
+}
+
+.button-register, .button-login{
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+}

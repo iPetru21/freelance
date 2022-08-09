@@ -1,0 +1,260 @@
+// Module pentru adaptarea site-ului
+
+$md1: 1030px;
+$md2: 992px;
+$md3: 768px;
+$md4: 576px;
+
+/////////////////////////////////////
+@media only screen and (max-width: 1050px){
+    .main__row{
+        flex-direction: column;
+    }
+    .main__column-content{
+        margin-top: 100px;
+    }
+    .main__column-image, .main__column-image-about, .main__column-image-contact{
+        background-position: center;
+    }
+    .title-main{
+        text-align: center;
+        &::after{
+            left: 50%;
+            margin-left: -62.5px;
+        }
+    }
+    .main-about{
+        padding: 25px 0 25px 0;
+    }
+    .stats__row{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 35px;
+    }
+
+    .profile__column-description{
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (max-width: 950px){
+    .profile-container{
+        flex-direction: column;
+    }
+    .button__link:first-child{
+        margin-top: 20px;
+    }
+    .form__button_msg{
+        margin: 25px 0px 0px 0px;
+    }
+    .rating-user{
+        justify-content: start;
+    }
+    .profile__column-description{
+        padding: 0 0 0 25px;
+    }
+    .profile.profile-user{
+        flex-wrap: nowrap;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .item-carousel{
+        width: 215px;
+        height: 65px;
+        font-size: 18px;
+    }
+    .footer__menu{
+        flex-wrap: wrap;
+    }
+    .menu-item{
+        margin-bottom: 15px;
+    }
+    .menu__list{
+        flex-wrap: wrap;
+    }
+    .text-about{
+        background-color: white;
+    }
+    .founder-background{
+        background-size: contain;
+        height: 56vh;
+    }
+    .regulations span{
+        font-size: 20px;
+    }
+    .contact__row{
+        flex-direction: column;
+    }
+}
+
+@media only screen and(max-width:750px){
+    .projects__body{
+        flex-direction: column;
+    }
+    .projects__category .projects__body{
+        flex-direction: row; 
+    }
+    .filter{
+        min-width: 280px;
+        align-self: center;
+    }
+    .profile{
+        flex-wrap: wrap;
+        
+        &__column-info{
+            margin: 20px 0 0 25px;
+        }
+    }
+    .form-row .form-group{
+        margin-right: 0;
+    }
+    .settings-form {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-row{
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and(max-width:700px){
+    .navbar{
+        background: url(../img/home/elipse.svg) no-repeat 48% -30px;
+    }
+    .founder-background{
+        max-height: 48vh;
+    }
+    .contact__column-map{
+        padding: 20px;
+    }
+    .profile{
+        justify-content: center;
+    }
+    .description__username{
+        font-size: 18px;
+    }
+    .about-description{
+        &__text{
+            font-size: 16px;
+        }
+        &__label{
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media only screen and(max-width:600px){
+    .profile.profile-user{
+        flex-wrap: wrap;
+    }
+    .profile__column-description{
+        padding: 0;
+    }
+    .description__username{
+        margin-top: 25px;
+        text-align: center;
+    }
+    .html-move-dest{
+        text-align: center;
+    }
+}
+
+@media only screen and(max-width:500px){
+    .logo__text-nav{
+        display: none;
+    }
+    .navbar{
+        background: none;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 19px;
+    }
+    .button{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .main__column-image{
+        background-size: contain;
+        min-height: 325px;
+    }
+    .main__column-content {
+        margin-top: 50px;
+    }
+    .about__row, .footer__top{
+        flex-direction: column;
+    }
+    .main__column-image-about, .main__column-image-contact{
+        margin-top: 0;
+        min-height: 200px;
+    }
+    .founder-background{
+        max-height: 37vh;
+    }
+    .regulations__item{
+        padding: 10px 15px
+    }
+    .regulations span {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .register-form, .signin-form{
+        padding: 15px 20px
+    }
+    .navbar__projects{
+        display: none;
+    }
+    .show-item{
+        display: block;
+    }
+    .projects__category .projects__body{
+        justify-content: center;
+    }
+    .profile__column-info{
+        margin: 20px 0 0 0;
+    }
+}
+
+@media only screen and(max-width:400px){
+    .main__column-image{
+        min-height: 240px;
+    }
+    .item-carousel {
+        width: 170px;
+        height: 55px;
+        font-size: 14px;
+    }
+    .item-carousel {
+        padding: 0 15px 0 5px;
+    }
+    .form__input{
+        width: 270px;
+    }
+    .form__input.form__input-value{
+        width: 134px;
+    }
+    .button-add a{
+        font-size: 11px;
+        padding: 10px 5px 10px 30px;
+        background-size: 15px 15px;
+        background-position: 8px 47%;
+    }
+}
+
+@media only screen and(min-width:1300px){
+    .founder-background{
+        min-height: 777px;
+    }
+}

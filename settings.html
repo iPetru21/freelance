@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <link rel="icon" href="img/home/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <title>Setări</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-content">
+                        <a class="logo logo-session" href="index.html">
+                            <img class="logo__img" src="img/home/logo.png" alt="">
+                            <div class="logo__text logo__text-nav">
+                                Freelance<span></span>md
+                            </div>
+                        </a>
+                        <a class="navbar__projects" href="">
+                            <img src="img/logat/layers.svg" alt="">
+                            <span>Proiecte</span>
+                        </a>
+                        <div class="navbar__user">
+                            <div class="user">
+                                <div class="user__avatar">
+                                    <img src="img/logat/user-photo.jpg" alt="">
+                                </div>
+                                <div class="user__login">
+                                    <span>@iPetru21</span>
+                                </div>
+                                <div class="user__button"></div>
+                            </div>
+                            <div class="navbar__menu">
+                                <ul>
+                                    <li class="show-item"><a href="#">Proiecte</a></li>
+                                    <li><a href="#">Setări</a></li>
+                                    <li><a href="#">Ieșire</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </nav>
+        </header> 
+        <section class="projects">
+            <div class="container">
+                <div class="projects__top">
+                    <h2 class="title main-title">
+                        Setări
+                    </h2>
+                </div>
+                <div class="profile">
+                    <div class="profile__column-avatar">
+                        <img src="../img/logat/user-photo.jpg" alt="">
+                        <div class="file-upload">
+                            <input type="file" class="file-upload__input" name="file-avatar">
+                            <button type="button" class="file-upload__button">Alege avatar</button>
+                            <span class="file-upload__label">Nici-un fișier selectat.</span>
+                        </div>
+                    </div>
+                    <div class="profile__column-info">
+                        <form action="#" class="settings-form">
+                            <h2 class="profile__username">Iftodi Petru</h2>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form__input" placeholder="Nume">
+                                    <img class="form__input-icon __bl" src="img/login/username.svg" alt="">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="surname" class="form__input" placeholder="Prenume">
+                                    <img class="form__input-icon __bl" src="img/logat/name.svg" alt="">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <input id="email-field" name="email" type="email" class="form__input" placeholder="Email">
+                                <img class="form__input-icon" src="img/register/email.svg" alt="">
+                            </div> 
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input id="password-field" name="password" type="password" class="form__input" placeholder="Parolă">
+                                    <img class="form__input-icon" src="img/login/password.svg" alt="">
+                                </div>
+                                <div class="form-group">
+                                    <input id="password-field" name="password2" type="password" class="form__input" placeholder="Parolă (din nou)">
+                                    <img class="form__input-icon" src="img/login/password.svg" alt="">
+                                </div> 
+                            </div>
+                            <div class="form-group">
+                                <label for="date"></label>
+                                <input id="date-field" type="date" name="date" class="form__input" >
+                                <img class="form__input-icon" src="img/register/calendar.svg" alt="">
+                            </div> 
+                            <button type="submit" class="form__button">Register</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top-logo">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="img/home/logo.png" alt="">
+                    <div class="logo__text logo__text-white">
+                        Freelance<span></span>md
+                    </div>
+                </a>
+            </div>
+            <div class="footer__top-socials">
+                <a href="#"><img class="footer__social-media" src="img/social media/facebook.svg" alt="facebook"></a>
+                <a href="#"><img class="footer__social-media" src="img/social media/instagram.svg" alt="instagram"></a>
+                <a href="#"><img class="footer__social-media" src="img/social media/youtube.svg" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <div class="menu__list">
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="about.html" class="menu-item">Despre noi</a>
+                <a href="regulament.html" class="menu-item">Regulament</a>
+                <a href="ajutor.html" class="menu-item">Ajutor</a>
+                <a href="contact.html" class="menu-item">Contact</a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            Copyright © 2021 Freelancer Technology Pty Limited
+        </div>
+    </div>
+</footer>    </div>
+    <script src="js/upload-avatar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

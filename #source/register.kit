@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/home/favicon.png" type="image/gif" sizes="16x16">
+    <title>Înregistrare</title>
+</head>
+<body>
+    <div class="form-background">
+        <form action="#" class="register-form">
+        <a class="logo" href="index.html">
+            <img class="logo__img" src="img/home/logo.png" alt="">
+            <div class="logo__text logo__text-form">
+                Freelance<span></span>md
+            </div>
+        </a>
+        <h2 class="title-form">Înregistrare</h2>
+        <div class="form-group">
+            <input type="text" class="form__input" placeholder="Login" required>
+            <img class="form__input-icon __bl" src="img/login/username.svg" alt="">
+        </div>
+        <div class="form-group">
+            <input id="email-field" type="email" class="form__input" placeholder="Email" required>
+            <img class="form__input-icon" src="img/register/email.svg" alt="">
+        </div> 
+        <div class="form-group">
+            <input id="password-field" type="password" class="form__input" placeholder="Parolă" required>
+            <img class="form__input-icon" src="img/login/password.svg" alt="">
+            <span class="password-toggle password-hide"></span>
+        </div> 
+        <div class="form-group">
+            <label for="date"></label>
+            <input id="date-field" type="date" name="date" class="form__input" required>
+            <img class="form__input-icon" src="img/register/calendar.svg" alt="">
+        </div> 
+        <div class="form-group form__checkbox">
+            <div class="checkbox-group">
+                <label for="checkbox">Sex:</label>
+            </div>
+            <div class="checkbox-group">
+                <label for="Masculin">Masculin</label>
+                <input type="radio" name="checkbox" value="Masculin" checked id="checkbox">
+            </div>
+            <div class="checkbox-group">
+                <label for="Feminin">Feminin</label>
+                <input type="radio" name="checkbox" value="Feminin" id="checkbox">
+            </div>
+        </div>
+        <button type="submit" class="form__button">Register</button>
+        </form>
+    </div>
+    <script src="../js/form.js"></script>
+</body>
+</html>
