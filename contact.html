@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <link rel="icon" href="img/home/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Contact</title>
+</head>
+<body>
+    <div class="wrapper regulation-bg">
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="img/home/logo.png" alt="">
+                    <div class="logo__text logo__text-nav">
+                        Freelance<span></span>md
+                    </div>
+                </a>
+                <div class="navbar__buttons">
+                    <button onclick="window.location.href='/login.html'" class="button-login">
+                        <img src="img/home/log-in.svg" alt="">
+                        <span>Logare</span>
+                    </button>
+                    <button onclick="window.location.href='/register.html'" class="button-register">Înregistrare</button>
+                </div>
+            </div> 
+        </div>
+    </nav>
+</header> 
+        <main class="main-about">
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__column-content">
+                        <h1 class="title title-main">
+                            Contact
+                        </h1>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="main__column-image-contact"></div>
+                </div>
+            </div>
+        </main>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__row">
+                    <div class="contact__column-form">
+                        <form class="contact__form" action="POST">
+                            <div class="form-item">
+                                <label for="name">Nume</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="surname">Prenume</label>
+                                <input type="text" name="surname" required>
+                            </div>
+                            <div class="form-item">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="form-item">
+                                <label for="message">Mesaj</label>
+                                <textarea name="message" cols="10" rows="10"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button type="submit">Trimite</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact__column-map">
+                        <div class="map-corner left-top-map">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="map-corner right-bottom-map">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <iframe src="https://maps.google.com/maps?q=Chisinau,%20Eugen%20Coca,%2015&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="contact__info">
+                    <div class="contact__info-column">
+                        <img src="../img/contact/phone.svg" alt="">
+                        <div class="contact-info">
+                            <h4>Telefon:</h4>
+                            <p>+37360647969</p>
+                            <p>027242290</p>
+                        </div>
+                    </div>
+                    <div class="contact__info-column">
+                        <img src="img/contact/gmail.svg" alt="">
+                        <div class="contact-info">
+                            <h4>Email:</h4>
+                            <p>contact@freelance.md</p>
+                            <p>help@freelance.md</p>
+                        </div>
+                    </div>
+                    <div class="contact__info-column">
+                        <img src="../img/contact/address.svg" alt="">
+                        <div class="contact-info">
+                            <h4>Adresă:</h4>
+                            <p>or.Chișinău, str Onisifor Ghibu, 14</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top-logo">
+                <a class="logo" href="index.html">
+                    <img class="logo__img" src="img/home/logo.png" alt="">
+                    <div class="logo__text logo__text-white">
+                        Freelance<span></span>md
+                    </div>
+                </a>
+            </div>
+            <div class="footer__top-socials">
+                <a href="#"><img class="footer__social-media" src="img/social media/facebook.svg" alt="facebook"></a>
+                <a href="#"><img class="footer__social-media" src="img/social media/instagram.svg" alt="instagram"></a>
+                <a href="#"><img class="footer__social-media" src="img/social media/youtube.svg" alt="youtube"></a>
+            </div>
+        </div>
+        <div class="footer__menu">
+            <div class="menu__list">
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="about.html" class="menu-item">Despre noi</a>
+                <a href="regulament.html" class="menu-item">Regulament</a>
+                <a href="ajutor.html" class="menu-item">Ajutor</a>
+                <a href="contact.html" class="menu-item">Contact</a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            Copyright © 2021 Freelancer Technology Pty Limited
+        </div>
+    </div>
+</footer>        
+        <!-- End Footer -->
+    </div>    
+</body>
+</html>
